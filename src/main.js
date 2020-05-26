@@ -1,8 +1,9 @@
-import Vue from 'vue';
-import App from './App.vue';
+import TransitionExpand from './components/TransitionExpand.vue';
 
-Vue.config.productionTip = false;
+export { TransitionExpand }
 
-new Vue({
-  render: h => h(App),
-}).$mount(`#app`);
+function install(Vue) {
+  Vue.component(`TransitionExpand`, TransitionExpand);
+}
+
+export default { install };

@@ -1,13 +1,17 @@
 {
-  "name": "transition-to-height-auto-with-vue",
-  "version": "0.1.0",
+  "name": "vue-transition-expand",
+  "version": "0.0.5",
   "author": "Markus Oberlehner",
-  "homepage": "https://github.com/maoberlehner/transition-to-height-auto-with-vue",
+  "homepage": "https://github.com/yanzijun/transition-to-height-auto-with-vue",
   "license": "MIT",
-  "private": true,
+  "main": "dist/vue-transition-expand.umd.min.js",
+  "files": [
+    "dist/vue-transition-expand.css"
+  ],
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve --open",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build --name vue-transition-expand --entry ./src/main.js --target lib",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
